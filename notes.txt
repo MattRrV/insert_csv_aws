@@ -1,0 +1,18 @@
+venv\Scripts\activate
+pip3 freeze > requirements.txt
+
+
+HOW TO EXECUTE DE PROGRAM
+1 - CREATE A USER IAM, TO GET YOUR AWS ACCESS KEY AND  AWS SECRET ACCESS KEY
+    https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_users_create.html
+
+2- INSTALL AND CONFIGURE AWS CLI
+    https://docs.aws.amazon.com/cli/v1/userguide/install-windows.html
+
+3- OPEN CMD AND DIGIT 'aws configure --profile 'your_profile'' AND INSERT YOR CREDENTIALS
+
+4- EXECUTE 'main.py' AND PASS THE ENDPOINT IN YOUR BROWSER: 'http://localhost:8000/get_csv/uiq-upload-bucket-edesoft/test.csv' / '/get_csv/{bucket_name}/{object_key}'
+    THE ENDPOINT WILL GET A CSV FROM A BUCKET ON AWS AND INSERT THE READED ROWS IN A TABLE AT DYNAMODB ON AWS.
+
+5- 
+
