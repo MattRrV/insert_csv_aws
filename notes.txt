@@ -1,5 +1,4 @@
-venv\Scripts\activate
-pip3 freeze > requirements.txt
+INSTALL requirements.txt
 
 
 HOW TO EXECUTE DE PROGRAM
@@ -14,5 +13,14 @@ HOW TO EXECUTE DE PROGRAM
 4- EXECUTE 'main.py' AND PASS THE ENDPOINT IN YOUR BROWSER: 'http://localhost:8000/get_csv/uiq-upload-bucket-edesoft/test.csv' / '/get_csv/{bucket_name}/{object_key}'
     THE ENDPOINT WILL GET A CSV FROM A BUCKET ON AWS AND INSERT THE READED ROWS IN A TABLE AT DYNAMODB ON AWS.
 
-5- 
 
+UPLOAD ON GIT
+1- git init to initialize the repository
+
+2- git add . to add your modifications
+
+3- git commit -m "your message commit"
+
+4- git remote add origin 'link of repository'
+
+5- git push -u origin master
