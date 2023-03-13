@@ -2,13 +2,6 @@ from fastapi import FastAPI
 from src.services.insert_csv_service import InsertUserService
 from src.infra.dynamodb_config import s3
 
-
-# boto3.setup_default_session(profile_name="Matt")
-# s3 = boto3.client('s3')
-
-# uiq-upload-bucket-edesoft
-# test.csv
-
 app = FastAPI()
 
 @app.get('/get_csv/{bucket_name}/{object_key}')
